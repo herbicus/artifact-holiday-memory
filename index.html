@@ -1,0 +1,97 @@
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Artifact Holiday Memory</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta property="og:title" content="Artifact Holiday Memory Game" /> 
+		<meta property="og:description" content="Happy Holidays from Artifact Design! Hope it is full of memories." /> 
+		<meta property="og:image" content="http://www.artifactdesign.com/artifact-holiday-memory-ben/assets/img/fb_share.jpg" />
+	
+		<link rel="image_src" href="/assets/img/featured.png"/>
+		<meta name="author" content="Artifact Design Inc.">
+		
+		<!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+		
+		<link rel="stylesheet" href="assets/css/styles.min.css">
+		<script src="assets/js/vendor/modernizr-2.8.0.min.js"></script>
+	</head>
+	<body>
+		<div class="locking-overlay"></div>
+		<!--[if lt IE 8]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<div class="page-wrap l-section-header">
+			<a href="http://www.artifactdesign.com/" target="_blank"><h1 class="artifact-logo">Artifact Holiday Memory</h1></a>
+		</div>
+
+		<!-- INTRO/SPLASH SCREEN -->
+		<div id="splash-overlay">
+		  	<div class="l-row">
+		  		<div class="full-width">
+		  			<img src="assets/img/intro-page-box-full.png" alt="">
+		  			<img src="assets/img/intro-loader.gif" alt="loading-bar" class="loader">
+
+		  			<div id="start-btn"></div>
+		  		</div>
+		  	</div>
+		</div>
+		
+		<!-- CARD FLIP AUDIO -->
+		<audio id="cardFlip" src="assets/audio/flip.mp3" preload="auto"></audio>
+
+		<!-- GAME LAYOUT -->
+		<div class="l-screen-row">
+		  	<div class="game-row">
+				<div id="game-container"></div>		  
+		  	</div>
+		</div>
+
+		<!-- END GAME SCREEN -->
+		<div id="end-overlay">
+		  	<div class="l-row">
+		  		<div class="full-width">
+		  			
+		  			<div id="reset-btn"></div>
+				  	
+				  	<div class="share-container">
+				  		<!-- FACEBOOK SHARE -->
+				  		<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.artifactdesign.com%2Fholiday-memory%2F" target="_blank">b</a>
+				  		
+						<!-- TWITTER SHARE -->
+				  		<!-- <a href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdev.twitter.com%2Fweb%2Ftweet-button&text=Artifact%20Holiday%20Memory%20Game&tw_p=tweetbutton&url=https%3A%2F%2Fhttp://artifactdesign.com%2Fartiifact-holiday-memory" target="_blank">a</a> -->
+				  		<a href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdev.twitter.com%2Fweb%2Ftweet-button&text=Happy%20Holidays%20from%20Artifact.&tw_p=tweetbutton&url=http://bit.ly/1AMrzgR" target="_blank">a</a>
+				  	</div>
+		  		</div>
+			</div>
+		</div>
+
+		<!-- End Game -->
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.8.3/TweenMax.min.js"></script>
+
+		<!-- <script src="assets/js/vendor/TweenMax.min.js"></script> -->
+
+		<script src="assets/js/main.min.js"></script>
+
+		<!-- LIVERELOADING FOR GRUNT -->
+		<!-- <script src="//localhost:35729/livereload.js"></script> -->
+		<!-- REMOVE FOR PRODUCTION -->
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<!-- <script>
+			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			e.src='//www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			ga('create','UA-XXXXX-X');ga('send','pageview');
+		</script> -->
+	</body>
+</html>

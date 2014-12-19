@@ -1,0 +1,86 @@
+// -------------------------------------
+//   SPLASH OVERLAY
+// -------------------------------------
+// ----- SPLASH OVERLAY STYLINGS
+// -------------------------------------
+
+#splash-overlay {
+	@include coverer;
+	background: url(../img/intro-page-bg-x.png);
+	@include bg-cover;
+	z-index: 5;
+	
+    @include media(max-width 569px, 6) {  // iPhone landscape
+    	background: url(../img/FLIPh_320x568.png);
+		@include bg-contain;
+		background-repeat: no-repeat !important;
+	}
+	@include media(min-width 569px max-width 768px, 6) { // iPad portrait
+		background: url(../img/flip_768x1024-x.png);
+		@include bg-contain;
+		background-repeat: no-repeat !important;
+    }
+
+	@include media(min-width 320px max-width 479px, 6) { // iPhone portrait
+		background: url(../img/flip_320x568.png);
+		@include bg-contain;
+		background-repeat: no-repeat;
+    }
+
+    .loader {
+		position: relative;
+    	top: 50%;
+    	left: 50%;
+    	@include transform(translate(97%, -720%));
+    	width: 16%;	
+    }
+	
+	#start-btn {
+		opacity: 0;
+		visibility: hidden;
+		position: relative;
+		z-index: 10;
+		margin-top: -35%;
+		margin-left: 66.5%;
+
+		margin-top: -41%;
+		margin-left: 66%;
+		width: 150px;
+		height: 38px;
+		background: url(../img/intro-page-btn.png);
+		@include bg-cover;
+		@include transition (all .3s ease-in-out);
+		&:hover {
+			cursor: pointer;
+			background: url(../img/intro-page-btn-hover.png);
+		}
+
+		@include media(min-width 320px max-width 479px, 6) { // iPhone portrait
+		display: none;
+	    }
+		@include media(min-width 569px max-width 768px, 6) { // iPhone portrait
+		display: none;
+	    }
+
+	}
+
+	img {
+		text-align: center;
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		
+		@include media(min-width 320px max-width 479px, 6) { // iPhone portrait
+			display: none;
+	    }
+
+		@include media(max-width 569px, 6) {  // iPhone landscape
+			display: none;
+		}
+
+		@include media(min-width 569px max-width 768px, 6) { // iPhone portrait
+			display: none;
+	    }
+	}
+
+}
